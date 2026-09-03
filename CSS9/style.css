@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+:root{
+    --bg-color:#000;
+    --color-:#ffff;
+    --log-:#b74b4b;
+}
+.body,html{
+    background-color: var(--bg-color);
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+     font-size: 62.5%;
+    color: var(--color-);
+}
+header{
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 3rem;
+    color: var(--log-);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.logo:hover{
+    transform: scale(1.1);
+
+}
+nav a{
+    font-size: 1.8rem;
+    color: var(--color-);
+    margin-left: 4rem;
+    transition: 0.3s ease;
+    font-weight: 500;
+    border-bottom: 3px solid transparent;
+}
+nav a:hover,nav a.active{
+    color: var(--log-);
+    border-bottom: 3px solid var(--log-);
+}
+nav.active{
+    display: block;
+    font-size: 2rem;
+    margin: 3rem;
+}
+nav a:hover,nav a.active{
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border-bottom: 0.5rem solid;
+}
+h1{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin-top: 125px;
+}
+p{
+    margin-top: 90px;
+    text-align:center ;
+    font-size: 20px;
+}
+@media all and (max-width:768px) {
+        nav{
+        flex-direction: column;
+        width: 150px;
+        height: 300px;
+        border-left: 2px solid var(--log-);
+        border-bottom-left-radius: 2rem;
+        border-bottom: 2px solid var(--log-);
+        padding: 1rem ;
+        background-color: #161616;
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+        position: relative;
+        left: 105px;
+        top: -30px;
+    }
+    nav .active{
+        display: block;
+    }
+    nav a{
+        display: block;
+        font-size: 2rem;
+        margin: 2rem 0;
+    }
+    h1{
+        margin-top: 290px;
+    }
+}

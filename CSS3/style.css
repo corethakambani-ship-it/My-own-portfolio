@@ -1,0 +1,143 @@
+ @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+ *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+ }
+ body,html{
+    background-color: var(--color-);
+    font-family: "Nunito", sans-serif;
+
+ }
+  :root{
+    --pink-: #fc8da0;
+    --color-:#ffff;
+    
+ }
+
+ .pain{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+  .pain0{
+    display: flex;
+    gap: 10px;
+    position: relative;
+    left: 50px;
+ }
+ .pain0 img{
+    width: 50px;
+    height: 50px;
+    margin-top: 30px;
+ }
+ .pain0 h1{
+    color: var(--pink-);
+ }
+ .pain1 a{
+    text-decoration: none;
+    color: var(--pink-);
+    margin-left: 20px;
+ }
+ .pain1 a:hover{
+    border-bottom: 2px solid var(--pink-);
+    border-radius: 3px;
+ }
+
+.drop h1{
+    color:  var(--pink-);
+    text-align: center;
+    margin-top: 90px;
+}
+
+ h1{
+    color: #ff6b81;
+    text-align: center;
+    margin-top: 35px;
+ }
+ .cycle-container {
+    margin-top: 80px;
+    margin-left: 680px;
+     transform: translateX(-50%);
+     width: 320px;
+     background: var(--color-);
+     border-radius: 12px;
+     box-shadow: 0 0 20px rgba(0,0,0,0.12);
+     padding: 16px;
+     margin-bottom: 16px;
+     z-index: 10;
+ }
+ .cycle-form {
+     display: grid;
+     gap: 12px;
+ }
+ .cycle-form label {
+     display: block;
+     font-size: 14px;
+     margin-bottom: 4px;
+     color: #333;
+ }
+ .cycle-form input {
+     width: 100%;
+     padding: 8px 10px;
+     border: 1px solid #ccc;
+     border-radius: 6px;
+     font-size: 14px;
+ }
+ .cycle-form button {
+     border: none;
+     background: #ff6b81;
+     color: var(--color-);
+     padding: 10px 14px;
+     border-radius: 8px;
+     cursor: pointer;
+     font-size: 16px;
+ }
+ .cycle-form button:hover {
+     background: #ff4d6d;
+ }
+ .Info {
+     margin-top: 10px;
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 6px;
+     font-size: 12px;
+ }
+ .periode {
+     background: #ffd6dc;
+        padding: 6px;
+     border-radius: 6px;
+     text-align: center;
+     color: #333;
+
+     }
+ .fertilité { 
+    background: #e7f7d6;
+      padding: 6px;
+     border-radius: 6px;
+     text-align: center;
+     color: #333;
+
+ }
+ .ovulation {
+     background: #cfe7ff;
+          padding: 6px;
+     border-radius: 6px;
+     text-align: center;
+     color: #333;
+
+     }
+     @media all and (max-width:768px) {
+        .pain1 a{
+        display: block;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .cycle-container{
+        position: relative;
+        left: -450px;
+    }
+
+
+}

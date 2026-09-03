@@ -1,0 +1,774 @@
+.body{
+    background-color: rgb(5, 5, 31);
+    height: 1500px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.acceuil{
+    display: flex;
+    gap: 15px;
+    background-color: black;
+    height: 90px;
+}
+.acceuil img{
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+}
+.acceuil input{
+    width: 300px;
+    height: 30px;
+    color: white;
+    border-radius: 10px;
+    background-color:rgb(9, 9, 73) ;
+    margin-top: 25px;
+    margin-left: 150px;
+}
+.acceuil ul{
+    display: flex;
+    gap: 20px;
+    color: white;
+}
+.acceuil a{
+    margin-top: 15px;
+    text-decoration: none;
+    color: white;
+}
+.acceuil ul a:hover{
+    color: dodgerblue;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+}
+.acceuil ul p:hover{
+    color: dodgerblue;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+}
+.barre input{
+    background-color: rgb(6, 6, 51);
+    width: 950px;
+    height: 30px;
+    border-radius: 10px;
+    margin-left: 350px;
+    margin-top: 20px;
+}
+.Catalogue{
+    display: flex;
+}
+.Catalogue0{
+    background-color: black;
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.Catalogue0 h1{
+    color: white;
+    text-align: center;
+}
+.Catalogue1{
+    background-color: rgb(8, 8, 85);
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+.Catalogue1 h3{
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+}
+.Catalogue1:hover{
+    background-color: blue;
+}
+.Catalogue2{
+    background-color: rgb(8, 8, 85);
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+.Catalogue2 h3{
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+}
+.Catalogue2:hover{
+    background-color: blue;
+}
+.Catalogue3{
+    background-color: rgb(8, 8, 85);
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+.Catalogue3 h3{
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+}
+.Catalogue3:hover{
+    background-color: blue;
+}
+.Catalogue4{
+    background-color: rgb(8, 8, 85);
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+.Catalogue4 h3{
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+}
+.Catalogue4:hover{
+    background-color: blue;
+}
+.Catalogue5{
+    background-color: rgb(8, 8, 85);
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+.Catalogue5 h3{
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+}
+.Catalogue5:hover{
+    background-color: blue;
+}
+.Catalogue6{
+    background-color: rgb(8, 8, 85);
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+.Catalogue6 h3{
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+}
+.Catalogue6:hover{
+    background-color: blue;
+}
+.picture{
+    perspective: 800px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.card{
+    position: relative;
+    width: 200px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+.front,.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+}
+.front{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotateY(0deg);
+    border-radius: 10px;
+    
+}
+.front img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+.back{
+    background-color:black;
+    display:flex ;
+    align-items: center;
+    border-radius: 10px;
+    height: 220px;
+    transform: rotateY(180deg);
+}
+.picture:hover .card{
+    transform: rotateY(180deg);
+}
+.back h3{
+    color: white;
+    position: absolute;
+    top: 0.5px;
+    
+}
+.back p{
+    color: white;
+    position: absolute;
+    top: 50px;
+    font-size: 11px;    
+}
+.back button{
+    background-color: blue;
+    width: 150px;
+    height: 25px;
+    border-radius: 10px;
+    margin-top: 165px;
+    margin-left: 20px;
+    border: none;
+    color: white;
+}
+.picture1{
+    perspective: 800px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.card{
+    position: relative;
+    width: 200px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+.front,.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+}
+.front{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotateY(0deg);
+    border-radius: 10px;
+    
+}
+.front img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+.back{
+    background-color:black;
+    display:flex ;
+    align-items: center;
+    border-radius: 10px;
+    height: 220px;
+    transform: rotateY(180deg);
+}
+.picture1:hover .card{
+    transform: rotateY(180deg);
+}
+.back h3{
+    color: white;
+    position: absolute;
+    top: 0.5px;
+    margin-left: 35px;    
+}
+.back p{
+    color: white;
+    position: absolute;
+    top: 50px;
+    font-size: 11px;    
+}
+.back button{
+    background-color: blue;
+    width: 150px;
+    height: 25px;
+    border-radius: 10px;
+    margin-top: 165px;
+    margin-left: 20px;
+    border: none;
+    color: white;
+}
+
+.picture2{
+    perspective: 800px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.card{
+    position: relative;
+    width: 200px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+.front,.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+}
+.front{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotateY(0deg);
+    border-radius: 10px;
+    
+}
+.front img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+.back{
+    background-color:black;
+    display:flex ;
+    align-items: center;
+    border-radius: 10px;
+    height: 220px;
+    transform: rotateY(180deg);
+}
+.picture2:hover .card{
+    transform: rotateY(180deg);
+}
+.back h3{
+    color: white;
+    position: absolute;
+    top: 0.5px;
+}
+.back p{
+    color: white;
+    position: absolute;
+    top: 50px;
+    font-size: 11px;    
+}
+.back button{
+    background-color: blue;
+    width: 150px;
+    height: 25px;
+    border-radius: 10px;
+    margin-top: 165px;
+    margin-left: 20px;
+    border: none;
+    color: white;
+}
+
+.picture3{
+    perspective: 800px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.card{
+    position: relative;
+    width: 200px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+.front,.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+}
+.front{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotateY(0deg);
+    border-radius: 10px;
+    
+}
+.front img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+.back{
+    background-color:black;
+    display:flex ;
+    align-items: center;
+    border-radius: 10px;
+    height: 220px;
+    transform: rotateY(180deg);
+}
+.picture3:hover .card{
+    transform: rotateY(180deg);
+}
+.back h3{
+    color: white;
+    position: absolute;
+    top: 0.5px;
+    margin-left: 35px;    
+}
+.back p{
+    color: white;
+    position: absolute;
+    top: 50px;
+    font-size: 11px;    
+}
+.back button{
+    background-color: blue;
+    width: 150px;
+    height: 25px;
+    border-radius: 10px;
+    margin-top: 165px;
+    margin-left: 20px;
+    border: none;
+    color: white;
+}
+
+.picture4{
+    perspective: 800px;
+    margin-left: 0px;
+    margin-top: 20px;
+}
+.card{
+    position: relative;
+    width: 200px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+.front,.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+}
+.front{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotateY(0deg);
+    border-radius: 10px;
+    
+}
+.front img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+.back{
+    background-color:black;
+    display:flex ;
+    align-items: center;
+    border-radius: 10px;
+    height: 220px;
+    transform: rotateY(180deg);
+}
+.picture4:hover .card{
+    transform: rotateY(180deg);
+}
+.back h3{
+    color: white;
+    position: absolute;
+    top: 0.5px;
+}
+.back p{
+    color: white;
+    position: absolute;
+    top: 50px;
+    font-size: 11px;    
+}
+.back button{
+    background-color: blue;
+    width: 150px;
+    height: 25px;
+    border-radius: 10px;
+    margin-top: 165px;
+    margin-left: 20px;
+    border: none;
+    color: white;
+}
+
+.picture5{
+    perspective: 800px;
+    margin-left: 0px;
+    margin-top: 20px;
+}
+.card{
+    position: relative;
+    width: 200px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+.front,.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+}
+.front{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotateY(0deg);
+    border-radius: 10px;
+    
+}
+.front img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+.back{
+    background-color:black;
+    display:flex ;
+    align-items: center;
+    border-radius: 10px;
+    height: 220px;
+    transform: rotateY(180deg);
+}
+.picture5:hover .card{
+    transform: rotateY(180deg);
+}
+.back h3{
+    color: white;
+    position: absolute;
+    top: 0.5px;
+}
+.back p{
+    color: white;
+    position: absolute;
+    top: 50px;
+    font-size: 11px;    
+}
+.back button{
+    background-color: blue;
+    width: 150px;
+    height: 25px;
+    border-radius: 10px;
+    margin-top: 165px;
+    margin-left: 20px;
+    border: none;
+    color: white;
+}
+
+.picture6{
+    perspective: 800px;
+    margin-left: 0px;
+    margin-top: 20px;
+}
+.card{
+    position: relative;
+    width: 200px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+.front,.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+}
+.front{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotateY(0deg);
+    border-radius: 10px;
+    
+}
+.front img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+.back{
+    background-color:black;
+    display:flex ;
+    align-items: center;
+    border-radius: 10px;
+    height: 220px;
+    transform: rotateY(180deg);
+}
+.picture6:hover .card{
+    transform: rotateY(180deg);
+}
+.back h3{
+    color: white;
+    position: absolute;
+    top: 0.5px;
+}
+.back p{
+    color: white;
+    position: absolute;
+    top: 50px;
+    font-size: 11px;    
+}
+.back button{
+    background-color: blue;
+    width: 150px;
+    height: 25px;
+    border-radius: 10px;
+    margin-top: 165px;
+    margin-left: 20px;
+    border: none;
+    color: white;
+}
+
+.picture7{
+    perspective: 800px;
+    margin-left: 0px;
+    margin-top: 20px;
+}
+.card{
+    position: relative;
+    width: 200px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+.front,.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+}
+.front{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotateY(0deg);
+    border-radius: 10px;
+    
+}
+.front img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+.back{
+    background-color:black;
+    display:flex ;
+    align-items: center;
+    border-radius: 10px;
+    height: 220px;
+    transform: rotateY(180deg);
+}
+.picture7:hover .card{
+    transform: rotateY(180deg);
+}
+.back h3{
+    color: white;
+    position: absolute;
+    top: 0.5px;
+}
+.back p{
+    color: white;
+    position: absolute;
+    top: 50px;
+    font-size: 11px;    
+}
+.back button{
+    background-color: blue;
+    width: 150px;
+    height: 25px;
+    border-radius: 10px;
+    margin-top: 165px;
+    margin-left: 20px;
+    border: none;
+    color: white;
+}
+.Nav-bar {
+    display: flex;
+    gap: 10px;
+}
+.Nav-bar0 img{
+    width: 40px;
+    height: 40px;
+}
+.Nav-bar0{
+    display: flex;
+}
+.Nav-bar0 p{
+    color: white;
+    margin-top: 35px;
+}
+.Nav-bar1 img{
+    width: 40px;
+    height: 40px;
+    margin-top: 19px;
+    margin-left: 10px;
+}
+.Nav-bar1{
+    display: flex;
+}
+.Nav-bar1 p{
+    color: white;
+    margin-top: 35px;
+}
+.Nav-bar2 img{
+    width: 40px;
+    height: 40px;
+    margin-top: 19px;
+    margin-left: 10px;
+}
+.Nav-bar2{
+    display: flex;
+}
+.Nav-bar2 p{
+    color: white;
+    margin-top: 35px;
+}
+
+.Nav-bar3 img{
+    width: 40px;
+    height: 40px;
+    margin-top: 19px;
+    margin-left: 10px;
+}
+.Nav-bar3{
+    display: flex;
+}
+.Nav-bar3 p{
+    color: white;
+    margin-top: 35px;
+}
+.Nav-bar0:hover{
+    background-color: dodgerblue;
+    width: 120px;
+    height: 60px;
+    border-radius: 10px;
+    
+}
+.Nav-bar1:hover{
+    background-color: dodgerblue;
+    width: 100px;
+    height: 60px;
+    border-radius: 10px;
+    
+}.Nav-bar2:hover{
+    background-color: dodgerblue;
+    width: 100px;
+    height: 60px;
+    border-radius: 10px;
+    
+}.Nav-bar3:hover{
+    background-color: dodgerblue;
+    width: 100px;
+    height: 60px;
+    border-radius: 10px;
+    
+}

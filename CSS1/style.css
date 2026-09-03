@@ -1,0 +1,200 @@
+ @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+ *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+ }
+ body,html{
+    background-color: white;
+    font-family: "Nunito", sans-serif;
+
+ }
+  :root{
+    --pink-: #fc8da0;
+    --color-:#ffff;
+    
+ }
+
+  .pain{
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+ }
+ .pain0{
+    display: flex;
+    gap: 10px;
+    position: relative;
+    left: 50px;
+ }
+ .pain0 h1{
+    color: var(--pink-);
+ }
+ .pain1 a{
+    text-decoration: none;
+    color: var(--pink-);
+    margin-left: 20px;
+ }
+ .pain1 a:hover{
+    border-bottom: 2px solid var(--pink-);
+    border-radius: 3px;
+ }
+
+.drop h1{
+    color:  var(--pink-);
+    text-align: center;
+    margin-top: 90px;
+}
+.calendrier-page {
+    min-height: calc(100vh - 120px);
+    justify-content: center;
+    align-items: center;
+    padding: 24px 16px 40px;
+    background: #ffffff;
+}
+.calendrier-page h2{
+    color: var(--pink-);
+    text-align: center;
+}
+.calendrier-page p{
+        color: var(--pink-);
+    text-align: center;
+
+}
+
+.calendrier-card {
+    width: 350px;
+    height: 460px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.16);
+    margin-left: 460px;
+    margin-top: 20px;
+}
+
+
+
+.calendrier {
+    background: #fff;
+    border-radius: 12px;
+    padding: 12px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#month-year {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #333333;
+}
+
+.btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f2f2f2;
+    color: #333333;
+    cursor: pointer;
+}
+
+.next-period-info {
+    text-align: center;
+    color: #555555;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.weekdays,
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 6px;
+}
+
+.weekdays div {
+    text-align: center;
+    font-weight: 700;
+    color: #666666;
+    padding: 4px 0;
+    font-size: 0.8rem;
+}
+
+.day-cell,
+.calendrier-empty {
+    min-height: 44px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color: #333333;
+    background: #ffffff;
+    border: 1px solid #ececec;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.day-cell:hover {
+    background-color: #3d3a3a;
+    color: #ffffff;
+}
+
+.today {
+    border: 2px solid #444444;
+}
+
+.legend{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.legend .Regle {
+    background: #f7a8c9;
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+
+.legend .Ovulation {
+    background: #6fa8ff;
+        width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+
+}
+
+.legend .Fertile {
+    background: #6ee07a;
+        width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+
+}
+@media all and (max-width:768px) {
+        .pain1 a{
+        display: block;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .calendrier-card{
+        position: relative;
+        left: -400px;
+    }
+}

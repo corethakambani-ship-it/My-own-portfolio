@@ -1,0 +1,231 @@
+ @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+ *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+ }
+ body,html{
+    background-color: var(--color-);
+    font-family: "Nunito", sans-serif;
+
+ }
+ :root{
+    --pink-: #fc8da0;
+    --color-:#ffff;
+    
+ }
+ .pain{
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+ }
+ .pain0{
+    display: flex;
+    gap: 10px;
+    position: relative;
+    left: 50px;
+ }
+ .pain0 h1{
+    color: var(--pink-);
+ }
+ .pain1 a{
+    text-decoration: none;
+    color: var(--pink-);
+    margin-left: 20px;
+ }
+ .pain1 a:hover{
+    border-bottom: 2px solid var(--pink-);
+    border-radius: 3px;
+ }
+.drop h1{
+    color: var(--pink-);
+    text-align: center;
+    margin-top: 90px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+.card{
+    background-color: var(--color-);
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-top: 45px;
+}
+.card:hover{
+    transform: translateY(-5px);
+    transition: 0.5s ease;
+}
+.card1 img{
+    margin-left: 80px;
+    background-color: var(--pink-)  ;
+    border-radius: 10px;
+}
+.card h5{
+    text-align: center;
+}
+.card p{
+    text-align: center;
+}
+.card .calendrier{
+    background-color:var(--pink-)  ;
+    padding: 0.5rem 0.5rem;
+    text-decoration: none;
+    color: var(--color-);
+    border-radius: 5px;
+    position: relative;
+    top: 30px;
+    left: 35px;
+}
+.card2 img{
+    margin-left: 80px;
+    background-color: rgb(229, 165, 248) ;
+    border-radius: 10px;
+    width: 45px;
+    height: 45px;
+}
+.card h5{
+    text-align: center;
+}
+.card p{
+    text-align: center;
+}
+.card .prediction{
+    background-color:var(--pink-)  ;
+    padding: 0.5rem 0.5rem;
+    text-decoration: none;
+    color: var(--color-);
+    border-radius: 5px;
+    position: relative;
+    top: 35px;
+    left: 35px;
+}
+.card3 img{
+    margin-left: 80px;
+    background-color: var(--pink-)  ;
+    border-radius: 10px;
+    width: 45px;
+    height: 45px;
+}
+.card h5{
+    text-align: center;
+}
+.card p{
+    text-align: center;
+}
+.card .suivi{
+    background-color:var(--pink-)  ;
+    padding: 0.5rem 0.5rem;
+    text-decoration: none;
+    color: var(--color-);
+    border-radius: 5px;
+    position: relative;
+    top: 13px;
+    left: 35px;
+}
+.card4 img{
+    margin-left: 80px;
+    background-color: var(--pink-)  ;
+    border-radius: 10px;
+    width: 45px;
+    height: 45px;
+}
+.card h5{
+    text-align: center;
+}
+.card p{
+    text-align: center;
+}
+.card .journal{
+    background-color:var(--pink-)  ;
+    padding: 0.5rem 0.5rem;
+    text-decoration: none;
+    color: var(--color-);
+    border-radius: 5px;
+    position: relative;
+    top: 13px;
+    left: 35px;
+}
+h2{
+    text-align: center;
+    margin-top: 20px;
+}
+.conseils{
+    display: flex;
+    gap: 10px;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+}
+.card0{
+    background-color: var(--color-);
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 450px;
+    height: 250px;
+}
+.regle img{
+    width: 200px;
+    height: 248px;
+    border-radius: 10px;
+}
+
+.aliment img{
+    width: 200px;
+    height: 248px;
+    border-radius: 10px;
+}
+.card0 h4{
+    margin-top: -230px;
+    margin-left: 200px;
+}
+.card0 .text{
+    margin-left: 200px;
+    margin-top: 20px;
+}
+.card0 .journal{
+        background-color:var(--pink-)  ;
+    padding: 0.5rem 0.5rem;
+    text-decoration: none;
+    color: var(--color-);
+    border-radius: 5px;
+    position: relative;
+    top: 50px;
+    left: 35px;
+}
+.card0 .text1{
+    margin-left: 200px;
+    margin-top: 20px;
+}
+.card0 .plat{
+     background-color:var(--pink-)  ;
+    padding: 0.5rem 0.5rem;
+    text-decoration: none;
+    color: var(--color-);
+    border-radius: 5px;
+    position: relative;
+    top: 65px;
+    left: 35px;
+}
+@media all and (max-width:768px) {
+    .pain1 a{
+        display: block;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .conseils{
+        display: flex;
+        flex-direction: column;
+    }
+}

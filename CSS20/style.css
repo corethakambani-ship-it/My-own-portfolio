@@ -1,0 +1,210 @@
+﻿*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --bg-:#06051b;
+    --color-:#ffff;
+    --pr-:#000;
+    --g-:#1663aa;
+    --gr-:#272347;
+    --cp-:#061f36;
+    --t-:#01101f;
+}
+body,html{
+    background-color: var(--bg-);
+    height: 100%;
+    color: var(--color-);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+}
+.home{
+    background-color:var(--pr-);
+    height: 80px;
+}
+.home .image{
+    display: flex;
+    gap: 20px;
+}
+.image img{
+    width: 150px;
+    height: 50px;
+    margin-top: 15px;
+
+}
+.image1{
+    display: flex;
+    gap: 25px;
+}
+.image1 img{
+    width: 35px;
+    height: 35px;
+    margin-top: 25px;
+}
+.image1 img:hover{
+    transition: 0.5s ease;
+    background-color: #1663aa;
+    border-radius: 10px;
+}
+.image input{
+    background-color: var(--gr-);
+    width: 250px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1.5px solid var(--g-);
+    margin-left: 360px;
+    margin-top: 25px;
+    color: var(--color-);
+}
+.dossier{
+    display: flex;
+    gap: 5px;
+}
+.dossier a{
+    text-decoration: none;
+    color: var(--color-);
+    display: flex;
+    margin-left: 15px;
+}
+.dossier a img{
+    width: 30px;
+    height: 30px;
+    margin-top: 30px;
+}
+.dossier a p{
+    margin-top: 35px;
+}
+.dossier a:hover{
+    border-radius: 5px;
+    border-bottom:4px solid #1663aa;
+    transform: translateY(-5px);
+    transition: 0.5s ease;
+}
+main img{
+    width: 1000px;
+    height: 200px;
+    margin-left: 180px;
+    margin-top: 40px;
+    box-shadow: 0 0 0.15px;
+}
+main h1{
+    color: var(--color-);
+    margin-top: 50px;
+    margin-left: 180px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    gap: 15px;
+    margin-left: 190px;
+    margin-top: 40px;
+    background-color: var(--t-);
+    width: 1000px;
+    height: 270px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background-color:var(--cp-);
+    border: 1px solid var(--g-);
+    height: 250px;
+    border-radius: 10px;
+}
+.card:hover{
+    transform: translateY(-5px);
+    transition: 0.5s ease;
+}
+.card1 img{
+    width: 170px;
+    height: 120px;
+    border-radius: 10px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.card1 h2{
+    text-align: center;
+}
+.card1 button{
+    background-color: var(--g-);
+    width: 100px;
+    height: 40px;
+    color: var(--color-);
+    border-radius: 10px;
+    border: 1px solid var(--g-);
+    margin-top: 20px;
+    margin-left: 45px;
+}
+.container1{
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    gap: 15px;
+    margin-left: 50px;
+    margin-top: 50px;
+    background-color: var(--t-);
+    width: 1200px;
+    height: 270px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background-color:var(--cp-);
+    border: 1px solid var(--g-);
+    height: 260px;
+    border-radius: 10px;
+}
+.card:hover{
+    transform: translateY(-5px);
+    transition: 0.5s ease;
+}
+@media all and (max-width:768px){
+    .home{
+        width: 100%;
+    }
+    .image input{
+        position: relative;
+        left: -370px;
+        width: 100px;
+    }
+    .dossier{
+        display: block;
+        flex-direction: column;
+        position: relative;
+        left: -390px;
+        background-color: var(--cp-);
+        height: 250px;
+        border-radius: 10px;
+        font-size: 14px;
+    }
+    body,html{
+        background-color: var(--bg-);
+        width: 100%;
+    }
+    main img{
+        width: 100%;
+        margin-left: -5px;
+    }
+    main h1{
+       margin-left: 5px;
+
+    }
+    main .titre{
+        position: relative;
+        top: 750px;
+    }
+    .container{
+        margin-left: 50px;
+        display: block;
+        flex-direction: column;
+        width: 200px;
+    }
+    .container1{
+        margin-left: 50px;
+        display: block;
+        flex-direction: column;
+        width: 200px;
+        margin-top: 800px;
+    }
+
+}

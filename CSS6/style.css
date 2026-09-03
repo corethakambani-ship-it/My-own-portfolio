@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+:root{
+    --bg-color:#000;
+    --color-:#ffff;
+    --log-:#b74b4b;
+}
+.body,html{
+    height: 100%;
+    background-color: var(--bg-color);
+    color: var(--color-);
+     font-size: 62.5%;
+     font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 3rem;
+    color: var(--log-);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.logo:hover{
+    transform: scale(1.1);
+
+}
+nav a{
+    font-size: 1.8rem;
+    color: var(--color-);
+    margin-left: 4rem;
+    transition: 0.3s ease;
+    font-weight: 500;
+    border-bottom: 3px solid transparent;
+}
+nav a:hover,nav a.active{
+    color: var(--log-);
+    border-bottom: 3px solid var(--log-);
+}
+nav.active{
+    display: block;
+    font-size: 2rem;
+    margin: 3rem;
+}
+nav a:hover,nav a.active{
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border-bottom: 0.5rem solid;
+}
+
+@media(max-width:768px){
+    nav{
+        flex-direction: column;
+        margin-bottom: 15px;
+        width: 150px;
+        height: 145px;
+        border-left: 2px solid var(--log-);
+        border-bottom-left-radius: 2rem;
+        border-bottom: 2px solid var(--log-);
+        padding: 1rem solid;
+        background-color: #161616;
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+        position: relative;
+        left: 105px;
+    }
+ }
+ h1{
+    text-align: center;
+    color: var(--color-);
+    margin-top: 140px;
+    font-size: 30px;
+ }
+.container{
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    width: 200px;
+    height: 300px;
+    margin-top: 80px;
+    gap: 65px;
+    position: relative;
+    left: 150px;
+}
+.card{
+    background-color: var(--bg-color);
+    border: 2px solid var(--log-);
+    height: 300px;
+    width: 250px;
+    border-radius: 5px;
+}
+.card:hover{
+    transform: translateY(-5px);
+    transition: 0.5s ease;
+}
+.card h2{
+    color: var(--color-);
+    padding-top: -90px;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 15px;
+}
+.card p{
+    font-size: 15px;
+    margin-top: 30px;
+}
+.card button{
+display: inline-block;
+padding: 1rem 2rem;
+background-color: var(--bg-color);
+border-radius: 4rem;
+font-size: 1.6rem;
+color: var(--log-);
+letter-spacing:0.3rem ;
+border: 2px solid var(--log-);
+font-weight: 600;
+transition: 0.3s ease;
+cursor: pointer;
+position: relative;
+left: 25px;
+top: 40px;
+}
+.card button:hover{
+    transform: scale3d(1.03);
+    background-color: var(--log-);
+    color: var(--bg-color);
+    box-shadow: 0 0 25px  var(--log-);
+}
+.card .taille{
+    margin-top: 50px;
+}
+.card .savoir{
+display: inline-block;
+padding: 1rem 2rem;
+background-color: var(--bg-color);
+border-radius: 4rem;
+font-size: 1.6rem;
+color: var(--log-);
+letter-spacing:0.3rem ;
+border: 2px solid var(--log-);
+font-weight: 600;
+transition: 0.3s ease;
+cursor: pointer;
+position: relative;
+left: 25px;
+top: 60px;
+}
+.card .savoi:hover{
+    transform: scale3d(1.03);
+    background-color: var(--log-);
+    color: var(--bg-color);
+    box-shadow: 0 0 25px  var(--log-);
+}
+.card .taille1{
+    margin-top: 50px;
+}
+.card .savoir1{
+display: inline-block;
+padding: 1rem 2rem;
+background-color: var(--bg-color);
+border-radius: 4rem;
+font-size: 1.6rem;
+color: var(--log-);
+letter-spacing:0.3rem ;
+border: 2px solid var(--log-);
+font-weight: 600;
+transition: 0.3s ease;
+cursor: pointer;
+position: relative;
+left: 25px;
+top: 60px;
+}
+.card .savoir1:hover{
+    transform: scale3d(1.03);
+    background-color: var(--log-);
+    color: var(--bg-color);
+    box-shadow: 0 0 25px  var(--log-);
+}
+.card .taille2{
+    margin-top: 50px;
+}
+.card .savoir2{
+display: inline-block;
+padding: 1rem 2rem;
+background-color: var(--bg-color);
+border-radius: 4rem;
+font-size: 1.6rem;
+color: var(--log-);
+letter-spacing:0.3rem ;
+border: 2px solid var(--log-);
+font-weight: 600;
+transition: 0.3s ease;
+cursor: pointer;
+position: relative;
+left: 25px;
+top: 42px;
+}
+.card .savoir2:hover{
+    transform: scale3d(1.03);
+    background-color: var(--log-);
+    color: var(--bg-color);
+    box-shadow: 0 0 25px  var(--log-);
+}
+@media all and (max-width:768px) {
+    nav{
+        flex-direction: column;
+        width: 150px;
+        height: 300px;
+        border-left: 2px solid var(--log-);
+        border-bottom-left-radius: 2rem;
+        border-bottom: 2px solid var(--log-);
+        padding: 1rem ;
+        background-color: #161616;
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+        position: relative;
+        left: 109px;
+        top: -40px;
+    }
+        nav a{
+        display: block;
+        font-size: 2rem;
+        margin: 2rem 0;
+    }
+
+        nav .active{
+        display: block;
+    }
+
+    .container{
+        display: block;
+        flex-direction: column;
+        margin-top: 410px;
+    }
+    h1{
+        position: absolute;
+        top: 180px;
+    }
+}
+

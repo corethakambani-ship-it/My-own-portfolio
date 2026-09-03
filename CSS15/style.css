@@ -1,0 +1,127 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ body{
+    background: linear-gradient(135deg,#1e3c72,#2e5298);
+    height: 100%;
+    font-family: 'Times New Roman', Times, serif;
+}
+.Tout-debut{
+    display: flex;
+    gap: 850px;
+}
+.Tout-debut h1{
+    color: white;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+.Tout-debut ul a{
+    color: white;
+    margin-top: 35px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.Tout-debut ul{
+    display: flex;
+    gap: 15px;
+}
+.Tout-debut ul a:hover{
+    background-color: white;
+    width: 50px;
+    border-radius: 10px;
+    color: dodgerblue;
+    transform: translateY(-10px);
+    transition: 0.3s ease;
+    box-shadow:0px 0px 20px rgba(255, 255, 255, 0.6) ;
+}
+.acceuil{
+    background-color: white;
+    width: 1100px;
+    height: 100px;
+    border-radius: 15px;
+    margin-top: 130px;
+    align-items: center;
+    margin-left: 130px;
+}
+.acceuil h2{
+    color: dodgerblue;
+    text-align: center;
+    padding-top: 40px;
+}
+.acceuil:hover{
+    transform: translateY(-10px);
+    transition: 0.3s ease;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.6);
+}
+.Ways0{
+    display: flex;
+    justify-content: space-between;
+}
+.card-list .card-item{
+    background-color: white;
+    padding: 38px;
+    border-radius: 10px;
+    width: 350px;
+    height: 400px;
+    margin-top: 175px;
+    margin-left: 15px;
+    list-style: none;
+}
+.card-list .card-item .image{
+    border-radius: 10px;
+    margin-left: -15px;
+}
+.card-list .card-item h3{
+    background-color: #218ce4;
+    width: 190px;
+    height: 30px;
+    border-radius: 20px;
+    margin-top: 10px;
+    padding-left: 9px;
+    color: white;
+    text-align: center;
+}
+.card-list .card-item p{
+    margin-top: 10px;
+    font-size: 17px;
+}
+.card-list .card-item .Info{
+    background-color: #218ce4;
+    color: white;
+    border-radius: 10px;
+    width: 220px;
+    height: 50px;
+    border: 1px solid #218ce4;
+    text-decoration: none;
+    position: relative;
+    top: 30px;
+}
+.card-list .card-item:hover{
+    transform: translateY(-10px);
+    transition: 0.3s ease;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.6);
+}
+.Ways3 .card-list .card-item .image{
+    width: 300px;
+    height: 170px;
+}
+@media all and (max-width:768px) {
+    .Tout-debut h1{
+        font-size: 20px;
+    }
+    .Tout-debut ul{
+        position: relative;
+        left: -700px;
+    }
+    .acceuil{
+        width: 450px;
+        margin-left: 10px;
+    }
+    .Ways0{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
