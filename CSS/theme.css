@@ -1,0 +1,117 @@
+:root {
+    --day-background: #ffffff;
+    --day-blue: #1769aa;
+    --day-text: #12304a;
+    --day-soft-blue: #eaf4ff;
+}
+
+body.day-mode {
+    background-color: var(--day-background) !important;
+    color: var(--day-text) !important;
+}
+
+html.day-mode {
+    background-color: var(--day-background) !important;
+}
+
+#themeToggle,
+.theme-toggle {
+    padding: 8px 12px;
+    border: 2px solid #b74b4b !important;
+    border-radius: 15px;
+    background-color: transparent;
+    color: #b74b4b;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+body.day-mode #themeToggle,
+body.day-mode .theme-toggle {
+    border-color: var(--day-blue) !important;
+}
+
+body.day-mode * {
+    background-color: var(--day-background) !important;
+    color: var(--day-text) !important;
+}
+
+body.day-mode header,
+body.day-mode nav,
+body.day-mode main,
+body.day-mode section,
+body.day-mode article,
+body.day-mode .container,
+body.day-mode .card,
+body.day-mode form,
+body.day-mode .contact-form,
+body.day-mode .contact-info,
+body.day-mode footer {
+    background-color: var(--day-background) !important;
+    color: var(--day-text) !important;
+}
+
+body.day-mode h1,
+body.day-mode h2,
+body.day-mode h3,
+body.day-mode h4,
+body.day-mode h5,
+body.day-mode h6,
+body.day-mode p,
+body.day-mode li,
+body.day-mode label,
+body.day-mode span,
+body.day-mode td,
+body.day-mode th {
+    color: var(--day-text) !important;
+}
+
+body.day-mode a,
+body.day-mode .logo {
+    color: var(--day-blue) !important;
+}
+
+body.day-mode input,
+body.day-mode textarea,
+body.day-mode select {
+    background-color: var(--day-background) !important;
+    color: var(--day-text) !important;
+    border-color: var(--day-blue) !important;
+}
+
+body.day-mode button,
+body.day-mode .btn,
+body.day-mode .theme-toggle,
+body.day-mode .card a {
+    background-color: var(--day-blue) !important;
+    color: #ffffff !important;
+    border-color: var(--day-blue) !important;
+}
+
+body.day-mode .theme-toggle {
+    cursor: pointer;
+}
+
+body.day-mode nav {
+    background-color: var(--day-soft-blue) !important;
+}
+
+body.day-mode .card {
+    border-color: var(--day-blue) !important;
+}
+
+body.day-mode button:hover,
+body.day-mode .btn:hover,
+body.day-mode .theme-toggle:hover,
+body.day-mode .card button:hover,
+body.day-mode .card a:hover {
+    background-color: var(--day-blue) !important;
+    color: #000000 !important;
+    border-color: #000000 !important;
+    box-shadow: none !important;
+    transform: scale3d(1.03, 1.03, 1.03);
+}
+
+body.day-mode img {
+    border-color: var(--day-blue);
+}

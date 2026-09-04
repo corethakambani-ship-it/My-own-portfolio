@@ -16,6 +16,39 @@
      font-size: 62.5%;
     color: var(--color-);
 }
+body{
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.page-controls{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-left: 25px;
+}
+.page-controls button,
+.image-button{
+    padding: 8px 12px;
+    border: 2px solid var(--log-);
+    border-radius: 15px;
+    background-color: var(--bg-color);
+    color: var(--color-);
+    cursor: pointer;
+    font-size: 24px;
+}
+.image-button{
+    display: inline-block;
+}
+#imageInput{
+    display: none;
+}
+body.day-mode{
+    --bg-color: #ffffff;
+    --color-: #12304a;
+    --log-: #1769aa;
+    background-color: #ffffff;
+    color: #12304a;
+}
+html.day-mode{ background-color: #ffffff; }
 .container{
     display: grid;
     grid-template-columns: 200px 200px 200px 200px ;
